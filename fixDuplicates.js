@@ -8,7 +8,7 @@ ga.addQuery('your_field' '=','Active');
 ga.addAggregate('COUNT', 'your_field2');
 ga.addQuery('your_field2','!=','');
 
-ga.addQuery('your_field2','IN'"your ids here');
+ga.addQuery('your_field2','IN''your ids here');
 ga.GroupBy('your_field2');
 ga.addHaving('COUNT', '>',1);
 ga.query();
