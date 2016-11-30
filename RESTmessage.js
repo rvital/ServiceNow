@@ -76,18 +76,4 @@ TestYourData.prototype = {
                     timeout= true;
                     break;//service did not respond after 60 tries 
                 }
-            }
-
-
-
-
- 
-
-      
-                
-                
-                
-                
-                
-        
-    
+            }    
