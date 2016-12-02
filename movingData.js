@@ -5,7 +5,7 @@ yourData.query();
 var count=0;
 
     while(yourData.next()){
-        cout ++;
+        count ++;
         var copyData = new GlideRecord('your_target_data');
         copyData.initialize();
         copyData.your_sourcedata_set = yourData.your_targetdata_set;
