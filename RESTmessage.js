@@ -12,7 +12,7 @@ function callTetsRest(){
     var testMS = new TestYourData();
     var cMsg = testMS.updateTestData(current.u_your_number, current.id);
     
-{
+}
 
 
 //Script Include
@@ -77,3 +77,9 @@ TestYourData.prototype = {
                     break;//service did not respond after 60 tries 
                 }
             }    
+        if (response != null){
+            return response.getStatusCode() + '###'+ response.getBody();
+        }
+    },
+    type: 'TestYourData'
+}
